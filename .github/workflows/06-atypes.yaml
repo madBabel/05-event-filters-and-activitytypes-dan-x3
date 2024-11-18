@@ -1,0 +1,16 @@
+name: 06 - Activity Types
+
+on:
+  pull_request:
+    types: [ opened , synchronize ]
+    branches:
+      - develop
+
+jobs:
+  echo:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Echo message
+        run: echo 'Ejecutando cada vez que se abern o sincronizan cambios en develop?'
+
+        
